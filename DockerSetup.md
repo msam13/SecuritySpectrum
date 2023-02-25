@@ -22,7 +22,7 @@ Activating a new venv
 >cd <venv-name>
 >Script\Activate  
 > mitre\Scripts\activate<br>
-> source mitre/lib/activate (on mac) <br>
+> source mitre/bin/activate (on mac) <br>
   
 update pip to latest version
 > python.exe -m pip install --upgrade pip
