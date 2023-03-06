@@ -1,4 +1,4 @@
-# securityBlogs
+# SecuritySpectrum
 
 Welcome to my security blogs repository, where I curate a selection of informative and insightful blog posts on various aspects of security. My goal is to provide a centralized resource for those interested in staying up-to-date on the latest trends, news, and best practices in the field of security.
 
