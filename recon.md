@@ -52,3 +52,5 @@ NMAP send the following in the order given below, to find whether an IP is in us
 **Other ARGS**
 `-p `(port)
 example : -p U:53,111,137, T:21-25
+
+The "-Oa" flag in Nmap is used to enable aggressive operating system detection. This flag tells Nmap to use a combination of active and passive techniques to determine the operating system of the target machine.It sends more probes to the target, which may increase the chance of being detected by intrusion detection systems (IDS) or firewalls. Therefore, it should be used with caution and only when necessary.
