@@ -15,14 +15,14 @@ Other Operators :
 
 An implication is the compound statement of the form "if p then q". It is denoted as p => q, (read as p implies q). It is false, only when P is true and Q is false
 
---------------
-|p| q  |p=>q|
---------------
-|T| T |T|
-|T| F |F|
-|F| T |T|
-|F| F |F|
---------------
+-------------- <br>
+|p| q  |p=>q| <br>
+-------------- <br>
+|T| T |T| <br>
+|T| F |F| <br>
+|F| T |T| <br>
+|F| F |F| <br>
+--------------<br>
 
 ## equivalence 
 simply put, equivalence ( p <=> q) is p implies q and q implies p. 
