@@ -1,0 +1,12 @@
+(set-logic LIA)
+(synth-fun f((x Bool)(y Bool)) Bool
+(
+(Start Bool (true false(Variable Bool)(and Start Start)(not Start))))
+)
+
+(declare-var x Bool)
+(declare-var y Bool)
+
+(constraint (=(f x y)(or x y)))
+
+(check-synth)

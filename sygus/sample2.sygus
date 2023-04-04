@@ -1,0 +1,30 @@
+
+(set-logic BV)
+
+(define-fun bool2bv ((b Bool)) (BitVec 4)
+(ite (= b true) #x1 #x0)
+)
+
+(synth-fun max2 ((x (BitVec 4)) (y (BitVec 4))) (BitVec 4)
+
+((
+	Start (BitVec 4)
+	(
+		x y
+		(bvand Start Start)
+		(bvxor Start Start)
+		(bvneg Start)
+		(bvnot Start)
+		(bool2bv (bvsle Start Start))
+	)
+))
+)
+
+(define-fun spec ((x (BitVec 4)) (y (BitVec 4))) (BitVec 4)
+(ite(bvslt x y) y x))
+
+(declare-var x (BitVec 4))
+(declare-var y (BitVec 4))
+
+(constraint (= (max2 x y) (spec x y)))
+(check-synth)
