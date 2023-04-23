@@ -1,6 +1,6 @@
 # Securing DevOps AKA Continuous security
 
-DevOps is the process of continuously improving software products through rapid release cycles, global automationi of integration and delivery piplines, and close collaboration between teams. Rapid release cycles leaves little room for thorough security reviews
+DevOps is the process of continuously improving software products through rapid release cycles, global automation of integration and delivery piplines, and close collaboration between teams. Rapid release cycles leaves little room for thorough security reviews
 
 At the core of DevOps is Continuos integration CI, Continuos delivery CD and Infrastructure as a serive IaaS. Reduced management is a result of using DevOps. 
 
@@ -12,15 +12,15 @@ Infrastructure as a service is the cloud. Data centre, network, server are entir
 
 ## Security in Devops
 
-In DevOps, everyone in product pipeline is focused on CUSTOMER
-Product manager - engagement and retention ratios
-Developers - ergonomics and usabilty
-Operators - uptime and response times
+In DevOps, everyone in product pipeline is focused on CUSTOMER <br>
+Product manager - engagement and retention ratios <br>
+Developers - ergonomics and usabilty <br>
+Operators - uptime and response times <br>
 
-In contrast, security teams focus on security centric goals like,
-Compliance with security standard
-Number of security incidents
-count of unpatched vulnerabilities on production systems
+In contrast, security teams focus on security centric goals like, <br>
+- Compliance with security standard <br>
+- Number of security incidents <br>
+- count of unpatched vulnerabilities on production systems <br>
 
 This disconnect in goal hurts communication and efficiency. For example, To meet goals, developer and operators ignore security recommendations. 
 security team blocks projects making use of unsafe techinques and recommends unrealistic solutions
@@ -40,7 +40,7 @@ Continuous security is composed of three areas
 ### Test driven security
 First step of a security program is to define, implement, and test security controls. security testing should be handled in the CI and CD pipelines automatically all the time. 
 
-Easy traget for attackers are web framework with security vulnerabilties, admin page open to internet with guessable password, security credentials leaked in opensource, out of date systems etc. So FIRST GOAL in implementing continuous security strategy is to take care of baseline: apply elementart set of controls on the application and infrastructure of the organization and test them continuously. like,
+Easy target for attackers are web framework with security vulnerabilties, admin page open to internet with guessable password, security credentials leaked in opensource, out of date systems etc. So FIRST GOAL in implementing continuous security strategy is to take care of baseline: apply elementary set of controls on the application and infrastructure of the organization and test them continuously. like,
 - SSH root login must be disabled on all systems
 - system and applications must be patched to latest version within 30days of its release
 - web application must use HTTPS, never HTTP
